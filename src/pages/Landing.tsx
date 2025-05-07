@@ -51,7 +51,7 @@ const Landing = () => {
                 )}
               </h1>
               <p className="mt-4 text-xl text-black/70">
-                Innovation starts here. Join us for 24 hours of coding, collaboration, and creativity.
+                Innovation starts here. Join us for 12 hours of coding, learning, and solving.
               </p>
               
               <div className="mt-10">
@@ -66,7 +66,7 @@ const Landing = () => {
             </div>
             
             <div className="mt-16 text-center">
-              <p className="text-sm text-black/50">June 15-16, 2025 • Tech Hub Campus</p>
+              <p className="text-sm text-black/50">May 12 and 14, 2025 • S G Balekundri Institute of Technology</p>
             </div>
           </div>
         </div>
