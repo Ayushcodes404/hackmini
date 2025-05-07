@@ -51,7 +51,7 @@ const Landing = () => {
                 )}
               </h1>
               <p className="mt-4 text-xl text-black/70">
-                Innovation starts here. Join us for 12 hours of coding, learning, and solving.
+                Innovation starts here. Join us for 6 hours of coding, learning, and solving.
               </p>
               
               <div className="mt-10">
