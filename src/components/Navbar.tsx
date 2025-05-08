@@ -45,6 +45,13 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
+            <a 
+              href="https://forms.office.com/r/ycMYubGVKg" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Button className="bg-black text-white hover:bg-black/80 ml-2">Register Now</Button>
+            </a>
           </div>
           
           {/* Mobile menu button */}
@@ -82,7 +89,13 @@ const Navbar = () => {
               </Link>
             ))}
             <div className="mt-4 px-3">
-              <Button className="w-full bg-black text-white hover:bg-black/80">Register</Button>
+              <a 
+                href="https://forms.office.com/r/ycMYubGVKg" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Button className="w-full bg-black text-white hover:bg-black/80">Register Now</Button>
+              </a>
             </div>
           </div>
         </div>

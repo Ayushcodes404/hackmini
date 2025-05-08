@@ -3,11 +3,10 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import LoadingScreen from '@/components/LoadingScreen';
-import TypewriterText from '@/components/TypewriterText';
 
 const Landing = () => {
   const [loading, setLoading] = useState(true);
-  const [firstTextComplete, setFirstTextComplete] = useState(false);
+  // Remove firstTextComplete state
   const navigate = useNavigate();
 
   const handleLoadComplete = () => {
@@ -37,18 +36,8 @@ const Landing = () => {
             
             <div className="text-center px-4 mt-8">
               <h1 className="text-5xl md:text-6xl font-extrabold text-black">
-                <TypewriterText 
-                  text="Mini " 
-                  speed={120}
-                  onComplete={() => setFirstTextComplete(true)}
-                />
-                {firstTextComplete && (
-                  <TypewriterText 
-                    text="Hackathon" 
-                    speed={120}
-                    className="text-primary"
-                  />
-                )}
+                <span>Mini </span>
+                <span className="text-primary">Hackathon</span>
               </h1>
               <p className="mt-4 text-xl text-black/70">
                 Innovation starts here. Join us for 6 hours of coding, learning, and solving.
