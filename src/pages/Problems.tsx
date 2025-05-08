@@ -16,110 +16,63 @@ const ProblemsPage = () => {
       id: 1,
       title: 'Mental Health Support Chatbot',
       description: 'Build a chatbot that offers mental health support by providing a safe space for users to share their feelings, access coping strategies, and find mental health resources.',
-      category: 'Artificial_Intelligence',
-      sponsor: 'MindCare Foundation',
-      resources: ['NLP libraries', 'Mental health guidelines', 'Cognitive behavior research']
+      category: 'Artificial_Intelligence'
     },
     {
       id: 2,
       title: 'Disaster Response Assistant',
       description: 'Create a chatbot that helps coordinate disaster response efforts by providing real-time updates, connecting volunteers, and guiding affected individuals to safety and resources.',
-      category: 'Artificial_Intelligence',
-      sponsor: 'ReliefNet',
-      resources: ['Real-time data APIs', 'Emergency response protocols', 'Location services']
+      category: 'Artificial_Intelligence'
     },
     {
       id: 3,
       title: 'Financial Literacy Chatbot',
       description: 'Develop a chatbot that educates users about personal finance, budgeting, and saving, helping them make informed financial decisions.',
-      category: 'Artificial_Intelligence',
-      sponsor: 'SmartFinance',
-      resources: ['Financial education resources', 'User behavior analysis', 'Budgeting templates']
+      category: 'Artificial_Intelligence'
     },
     {
       id: 4,
       title: 'Job Preparation Mentor',
       description: 'Build a chatbot that helps job seekers prepare for interviews, improve resumes, and practice common interview questions.',
-      category: 'Artificial_Intelligence',
-      sponsor: 'CareerBuilders',
-      resources: ['Resume templates', 'Interview guides', 'Professional development content']
+      category: 'Artificial_Intelligence'
     },
     {
       id: 5,
       title: 'Climate Action Advocate',
       description: 'Create a chatbot that educates users on climate change, provides daily eco-friendly tips, and helps them track their carbon footprint.',
-      category: 'Artificial_Intelligence',
-      sponsor: 'GreenFuture Alliance',
-      resources: ['Climate data sources', 'Carbon footprint calculators', 'Behavioral change strategies']
+      category: 'Artificial_Intelligence'
     },
     {
       id: 6,
       title: 'Mindful Moments',
       description: 'A responsive meditation timer with ambient sounds and optional guided sessions. Add Firebase email/password login.',
-      category: 'webdev',
-      sponsor: 'Calm Minds',
-      resources: ['Firebase Authentication', 'Audio libraries', 'UI design templates']
+      category: 'webdev'
     },
     {
       id: 7,
       title: 'Digital Sketchbook',
       description: 'An in-browser canvas with brushes, shapes, colors, and eraser tools. Add Firebase email/password login.',
-      category: 'webdev',
-      sponsor: 'Creativity Hub',
-      resources: ['Canvas APIs', 'Firebase Authentication', 'Graphic design elements']
+      category: 'webdev'
     },
     {
       id: 8,
       title: 'FocusFlow Pomodoro',
       description: 'Customizable work/break timer with cycle tracking and notifications. Add Firebase email/password login.',
-      category: 'webdev',
-      sponsor: 'Productivity Plus',
-      resources: ['Notification APIs', 'Firebase Authentication', 'Time management strategies']
+      category: 'webdev'
     },
     {
       id: 9,
       title: 'Showcase Portfolio',
       description: 'A dynamic personal site with interactive sections and an admin area. Add Firebase email/password login.',
-      category: 'webdev',
-      sponsor: 'Personal Brand Inc.',
-      resources: ['Firebase Authentication', 'Responsive design templates', 'Content management guides']
+      category: 'webdev'
     },
     {
       id: 10,
       title: 'CineFinder',
       description: 'A movie explorer with genre/year/rating filters and a “Watchlist.” Add Firebase email/password login.',
-      category: 'webdev',
-      sponsor: 'Movie Buffs United',
-      resources: ['Movie APIs', 'Firebase Authentication', 'User experience design tips']
+      category: 'webdev'
     }
   ];
-  
-  const getDifficultyColor = (difficulty) => {
-    switch (difficulty) {
-      case 'Easy':
-        return 'bg-green-100 text-green-800';
-      case 'Medium':
-        return 'bg-yellow-100 text-yellow-800';
-      case 'Hard':
-        return 'bg-red-100 text-red-800';
-      default:
-        return 'bg-gray-100 text-gray-800';
-    }
-  };
-  
-  const getCategoryColor = (category) => {
-    switch (category) {
-      case 'Artificial_Intelligence':
-        return 'bg-purple-100 text-purple-800';
-      default:
-        return 'bg-gray-100 text-gray-800';
-    }
-  };
-  
-  const getCategoryName = (categoryId) => {
-    const category = categories.find(cat => cat.id === categoryId);
-    return category ? category.name : categoryId;
-  };
   
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -147,22 +100,11 @@ const ProblemsPage = () => {
                 .map((problem) => (
                   <Card key={problem.id} className="h-full flex flex-col">
                     <CardHeader>
-                      <div className="flex justify-between items-start gap-4">
-                        <CardTitle>{problem.title}</CardTitle>
-                        
-                      </div>
-                      <CardDescription>
-                        Sponsored by {problem.sponsor}
-                      </CardDescription>
+                      <CardTitle>{problem.title}</CardTitle>
                     </CardHeader>
                     <CardContent className="flex-grow">
                       <p className="text-muted-foreground">{problem.description}</p>
                     </CardContent>
-                    <CardFooter>
-                      <Button variant="outline" className="w-full">
-                        View Details
-                      </Button>
-                    </CardFooter>
                   </Card>
                 ))}
             </div>
