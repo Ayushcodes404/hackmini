@@ -12,7 +12,7 @@ const Navbar = () => {
   const navigation = [
     { name: 'Info', href: '/' },
     { name: 'Sessions', href: '/sessions' },
-    { name: 'Problem Statements', href: '/coming_soon' },
+    { name: 'Problem Statements', href: '/problems' },
   ];
 
   const toggleMenu = () => {
