@@ -6,35 +6,35 @@ import { Badge } from '@/components/ui/badge';
 const SessionsPage = () => {
   const sessions = [
     {
-      time: '9:00 AM - 9:05 AM',
+      time: '10:00 AM - 10:10 AM',
       title: 'Inauguration',
       description: 'Brief intro about the Mini-Hackathon, its purpose & importance.',
       speaker: 'Organizing Committee',
       track: 'Main'
     },
     {
-      time: '9:05 AM - 9:35 AM',
+      time: '10:10 AM - 11:11 AM',
       title: 'Frontend Basics',
       description: 'Basics of frontend web development, open-source AI tools for UI, syntax connection to backend (POST methods, forms, etc.).',
       speaker: 'Nilesh Patil',
       track: 'Workshop'
     },
     {
-      time: '9:35 AM - 10:05 AM',
+      time: '11:30 AM - 12:00 AM',
       title: 'Backend with Flask',
       description: 'Firebase & Flask overview, types of databases, frontend-backend connectivity, importance of hackathons for engineering students.',
       speaker: 'Abhay Patil',
       track: 'Workshop'
     },
     {
-      time: '10:05 AM - 10:45 AM',
+      time: '12:00 PM - 12:30 PM',
       title: 'Git, GitHub & LinkedIn',
       description: 'Git basics using GUI (repo creation, push, pull, commit), navigating GitHub, importance of LinkedIn for networking.',
-      speaker: 'Anshul Halakarni',
+      speaker: 'Shrilakshmi Kakati, Anshul Halakarni',
       track: 'Workshop'
     },
     {
-      time: '10:45 AM - 11:45 AM',
+      time: '1:00 PM - 1:30 PM',
       title: 'Simple Chatbots',
       description: 'Creating simple chatbots for specific tasks, hands-on demo, easy-to-understand explanation for beginners.',
       speaker: 'Ayush Tammannavar',
