@@ -46,7 +46,7 @@ const Navbar = () => {
               </Link>
             ))}
             <a 
-              href="https://forms.office.com/r/ycMYubGVKg" 
+              href="https://forms.cloud.microsoft/r/3AwPFzTKrS" 
               target="_blank" 
               rel="noopener noreferrer"
             >
