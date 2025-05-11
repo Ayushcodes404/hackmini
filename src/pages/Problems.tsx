@@ -28,7 +28,7 @@ const ProblemsPage = () => {
         <h1 className="text-4xl font-bold">AI Chatbot Problem Statements</h1>
         <p className="mt-4 text-xl text-muted-foreground">Choose from these impactful challenges for your hackathon project</p>
         <div className="mt-8">
-          <a href="/rulebook.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/mini_hackathon.pdf" target="_blank" rel="noopener noreferrer">
             <Button variant="default" className="px-6 py-3 text-lg font-medium">Download General Rule Book</Button>
           </a>
         </div>
