@@ -13,6 +13,7 @@ const Navbar = () => {
     { name: 'Info', href: '/' },
     { name: 'Sessions', href: '/sessions' },
     { name: 'Problem Statements', href: '/problems' },
+    {name : 'Contact', href: '/contact'}
   ];
 
   const toggleMenu = () => {
@@ -46,7 +47,7 @@ const Navbar = () => {
               </Link>
             ))}
             <a 
-              href="https://forms.cloud.microsoft/r/3AwPFzTKrS" 
+              href="https://forms.gle/draNcPkmWvZYoQoR7" 
               target="_blank" 
               rel="noopener noreferrer"
             >
@@ -90,7 +91,7 @@ const Navbar = () => {
             ))}
             <div className="mt-4 px-3">
               <a 
-                href="https://forms.office.com/r/ycMYubGVKg" 
+                href="https://forms.gle/f9EH7JxVmpp1eiZ57" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >

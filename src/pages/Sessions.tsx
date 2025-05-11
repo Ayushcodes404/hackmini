@@ -2,6 +2,8 @@ import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Badge } from '@/components/ui/badge';
+import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
 
 const SessionsPage = () => {
   const sessions = [
@@ -10,14 +12,15 @@ const SessionsPage = () => {
       title: 'Inauguration',
       description: 'Brief intro about the Mini-Hackathon, its purpose & importance.',
       speaker: 'Organizing Committee',
-      track: 'Main'
+      track: 'Main',
+      prerequisites: null
     },
     {
       time: '10:10 AM - 11:11 AM',
-      title: 'Frontend Basics',
-      description: 'Basics of frontend web development, open-source AI tools for UI, syntax connection to backend (POST methods, forms, etc.).',
+      title: 'AI tools : An Overview',
+      description: 'Overview of AI tools,hands on experience, their applications, and their importance in the field of engineering.',
       speaker: 'Nilesh Patil',
-      track: 'Workshop'
+      track: 'Workshop',
     },
     {
       time: '11:30 AM - 12:00 AM',
@@ -31,7 +34,9 @@ const SessionsPage = () => {
       title: 'Git, GitHub & LinkedIn',
       description: 'Git basics using GUI (repo creation, push, pull, commit), navigating GitHub, importance of LinkedIn for networking.',
       speaker: 'Shrilakshmi Kakati, Anshul Halakarni',
-      track: 'Workshop'
+      track: 'Workshop',
+      prerequisites: '/git_pre.pdf'
+
     },
     {
       time: '1:00 PM - 1:30 PM',
@@ -53,6 +58,12 @@ const SessionsPage = () => {
     }
   };
 
+  const handlePrerequisites = (prerequisites: string | null) => {
+    if (prerequisites) {
+      window.open(prerequisites, '_blank');
+    }
+  };
+
   const renderTimelineItem = (session, index) => (
     <div key={index} className="relative pl-10 pb-10">
       {index !== 0 && <div className="timeline-connector"></div>}
@@ -62,9 +73,22 @@ const SessionsPage = () => {
       <div className="bg-card rounded-lg shadow-sm border p-6">
         <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
           <p className="font-mono text-sm text-muted-foreground">{session.time}</p>
-          <Badge variant="outline" className={getTrackColor(session.track)}>
-            {session.track}
-          </Badge>
+          <div className="flex items-center gap-2">
+            <Badge variant="outline" className={getTrackColor(session.track)}>
+              {session.track}
+            </Badge>
+            {session.prerequisites && (
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => handlePrerequisites(session.prerequisites)}
+                className="flex items-center gap-1"
+              >
+                <Download className="h-4 w-4" />
+                Prerequisites
+              </Button>
+            )}
+          </div>
         </div>
         <h3 className="font-bold text-xl">{session.title}</h3>
         <p className="text-muted-foreground mt-2">{session.description}</p>

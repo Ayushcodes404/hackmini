@@ -12,7 +12,7 @@ import SessionsPage from "./pages/Sessions";
 import ProblemsPage from "./pages/Problems";
 import NotFound from "./pages/NotFound";
 import LoadingScreen from "./components/LoadingScreen";
-
+import ContactPage from '@/pages/Contact';
 const queryClient = new QueryClient();
 
 const App = () => {
@@ -67,6 +67,17 @@ const App = () => {
                     <Navbar />
                     <div className="flex-grow">
                       <ProblemsPage />
+                    </div>
+                  </div>
+                }
+              />
+              <Route
+                path="/contact"
+                element={
+                  <div className="min-h-screen flex flex-col">
+                    <Navbar />
+                    <div className="flex-grow">
+                      <ContactPage />
                     </div>
                   </div>
                 }
