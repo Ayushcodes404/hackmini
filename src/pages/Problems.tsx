@@ -10,16 +10,81 @@ const ProblemsPage = () => {
     { id: 'webdev', name: 'Web Development' },
   ];  
   const problems = [
-    { id: 1, title: 'Mental Health Support Chatbot', description: 'Build a chatbot that offers mental health support by providing a safe space for users to share their feelings, access coping strategies, and find mental health resources.', category: 'Artificial_Intelligence' },
-    { id: 2, title: 'Disaster Response Assistant', description: 'Create a chatbot that helps coordinate disaster response efforts by providing real-time updates, connecting volunteers, and guiding affected individuals to safety and resources.', category: 'Artificial_Intelligence' },
-    { id: 3, title: 'Financial Literacy Chatbot', description: 'Develop a chatbot that educates users about personal finance, budgeting, and saving, helping them make informed financial decisions.', category: 'Artificial_Intelligence' },
-    { id: 4, title: 'Job Preparation Mentor', description: 'Build a chatbot that helps job seekers prepare for interviews, improve resumes, and practice common interview questions.', category: 'Artificial_Intelligence' },
-    { id: 5, title: 'Climate Action Advocate', description: 'Create a chatbot that educates users on climate change, provides daily eco-friendly tips, and helps them track their carbon footprint.', category: 'Artificial_Intelligence' },
-    { id: 6, title: 'Mindful Moments', description: 'A responsive meditation timer with ambient sounds and optional guided sessions. Add Firebase email/password login.', category: 'webdev' },
-    { id: 7, title: 'Digital Sketchbook', description: 'An in-browser canvas with brushes, shapes, colors, and eraser tools. Add Firebase email/password login.', category: 'webdev' },
-    { id: 8, title: 'FocusFlow Pomodoro', description: 'Customizable work/break timer with cycle tracking and notifications. Add Firebase email/password login.', category: 'webdev' },
-    { id: 9, title: 'Showcase Portfolio', description: 'A dynamic personal site with interactive sections and an admin area. Add Firebase email/password login.', category: 'webdev' },
-    { id: 10, title: 'CineFinder', description: 'A movie explorer with genre/year/rating filters and a “Watchlist.” Add Firebase email/password login.', category: 'webdev' }
+    // --- AI Category ---
+    {
+      id: 1,
+      title: 'AI Wellness Companion',
+      description: 'Develop an AI-powered chatbot that provides emotional check-ins, mood tracking, and personalized wellness recommendations for users managing daily stress.',
+      category: 'Artificial_Intelligence'
+    },
+    {
+      id: 2,
+      title: 'Crisis Navigator Bot',
+      description: 'Design a chatbot to assist in emergency situations by offering situational advice, connecting people with first responders, and disseminating verified information in real-time.',
+      category: 'Artificial_Intelligence'
+    },
+    {
+      id: 3,
+      title: 'Smart Budget Coach',
+      description: 'Create a chatbot that acts as a personal financial coach—monitoring spending, setting savings goals, and delivering tips to help users achieve financial stability.',
+      category: 'Artificial_Intelligence'
+    },
+    {
+      id: 4,
+      title: 'Career Path Finder',
+      description: 'Design a chatbot that guides users in exploring career options, assessing skills, and recommending learning resources based on their goals and background.',
+      category: 'Artificial_Intelligence'
+    },
+    {
+      id: 5,
+      title: 'Green Habits Bot',
+      description: 'Build a chatbot that helps users adopt sustainable habits by tracking eco-friendly actions, rewarding progress, and offering personalized environmental challenges.',
+      category: 'Artificial_Intelligence'
+    },
+    {
+      id: 6,
+      title: 'Healthcare Symptom Checker',
+      description: 'Build an AI assistant that allows users to input symptoms and receive likely condition suggestions, guidance, and recommendations for care or doctor visits.',
+      category: 'Artificial_Intelligence'
+    },
+
+    // --- Web Dev Category ---
+    {
+      id: 7,
+      title: 'ZenSpace Timer',
+      description: 'Build a calm-focused timer app with customizable meditation and break sessions, ambient soundscapes, and user login using Firebase authentication.',
+      category: 'webdev'
+    },
+    {
+      id: 8,
+      title: 'ArtBoard Studio',
+      description: 'Create a digital sketching tool with layer support, shape tools, and brush effects, with Firebase email/password authentication for project saving.',
+      category: 'webdev'
+    },
+    {
+      id: 9,
+      title: 'WorkCycle Timer',
+      description: 'Develop a Pomodoro-style app with work/rest cycle customization, user streaks, and Firebase-based user authentication.',
+      category: 'webdev'
+    },
+    {
+      id: 10,
+      title: 'MyCreative Hub',
+      description: 'Build a portfolio builder with sections for projects, testimonials, and blog posts, including a Firebase-authenticated admin dashboard for content editing.',
+      category: 'webdev'
+    },
+    {
+      id: 11,
+      title: 'MovieMatch',
+      description: 'Design a film discovery web app with search filters, watchlist functionality, and Firebase login for personalized content tracking.',
+      category: 'webdev'
+    },
+    {
+      id: 12,
+      title: 'GoalKeeper Tracker',
+      description: 'Create a goal-tracking app where users can set, track, and celebrate progress on personal or professional goals. Includes Firebase auth and data persistence.',
+      category: 'webdev'
+    }
   ];
 
   return (
